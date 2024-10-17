@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable'; // Importa a biblioteca para detectar os gestos
+import { useSwipeable } from 'react-swipeable'; 
 import Cover from '../components/Cover';
 import Menu from '../components/Menu';
 import Chapter1 from '../chapters/Chapter1';
@@ -32,12 +32,11 @@ const Book = () => {
     }
   };
 
-  // Configurações de swipe usando `react-swipeable`
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: handleSwipeLeft,  // Deslizar para a esquerda avança para a próxima página
-    onSwipedRight: handleSwipeRight, // Deslizar para a direita volta para a página anterior
-    preventDefaultTouchmoveEvent: true, // Previne o scroll vertical
-    trackMouse: true // Permite que o mouse também seja usado para swipe (opcional)
+    onSwipedLeft: handleSwipeLeft,  
+    onSwipedRight: handleSwipeRight, 
+    preventDefaultTouchmoveEvent: true, 
+    trackMouse: true 
   });
 
   return (
