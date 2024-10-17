@@ -1,13 +1,20 @@
 import React, { useEffect } from 'react';
 import NavigationButtons from '../components/NavigationButtons';
 import bookTitle from '../control/main';
+import chapters from '../control/chapters';
 
 const Chapter1 = ({ onPrev, onNext, goToMenu }) => {
-
-  const chapterTitle = "O Buraco do Coelho";
-  const chapterNumberName = "Capítulo 1"
   const chapterNumber = 1;
-  bookTitle(chapterTitle);
+
+  const chapterTitle = chapters[chapterNumber].title;
+  const chapterNumberName = `Capítulo ${chapterNumber}`;
+  
+  useEffect(() => {
+    bookTitle(chapterTitle); 
+    return () => {
+      document.title = "As Aventuras de Alice no País das Maravilhas"; 
+    };
+  }, [chapterTitle]);
 
   return (
     <div className="page chapter">

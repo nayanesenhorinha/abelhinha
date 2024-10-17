@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Cover = ({ onNext, goToMenu }) => {
+
   return (
     <div className="page cover">
       <h1>Capa do E-book</h1>

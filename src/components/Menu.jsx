@@ -1,15 +1,16 @@
 import React from 'react';
+import chapters from '../control/chapters';
 
 const Menu = ({ goToChapter }) => {
-  const chapters = Array.from({ length: 25 }, (_, i) => `Capítulo ${i + 1}`);
-  
   return (
     <div className="page menu">
       <h2>Sumário</h2>
       <ul>
-        {chapters.map((chapter, index) => (
-          <li key={index}>
-            <button onClick={() => goToChapter(index + 1)}>{chapter}</button>
+        {Object.entries(chapters).map(([chapterNumber, chapterData]) => (
+          <li key={chapterNumber}>
+            <button onClick={() => goToChapter(Number(chapterNumber))}>
+              {`Capítulo ${chapterNumber}: ${chapterData.title}`} {/* Título do capítulo aqui */}
+            </button>
           </li>
         ))}
       </ul>
@@ -18,3 +19,4 @@ const Menu = ({ goToChapter }) => {
 };
 
 export default Menu;
+
