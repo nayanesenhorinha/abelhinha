@@ -3,7 +3,5 @@ const bookTitle = (chapterTitle) => {
     document.title = `${chapterTitle} - ${bookTitleT}`;
   };
 
-  
-  
 export default bookTitle;
   
