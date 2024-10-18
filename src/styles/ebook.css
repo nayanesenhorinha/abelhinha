@@ -12,13 +12,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html, body, div, span, 
-h1, h2, h3, h4, h5, h6, p, blockquote, 
-a, img, small, strong, 
-b, u, i, center,
-ol, ul, li, legend,
-figure, figcaption, footer, header, section  {
+ 
+h1, h2, h3, h4, h5, h6, p  {
     font-weight: normal;
     font-size: 1rem; 
     color: var(--font-color);
