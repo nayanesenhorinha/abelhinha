@@ -7,7 +7,6 @@ import Chapter2 from '../chapters/Chapter2';
 // Continue importando os capítulos até Chapter25
 
 const Book = () => {
-  // Estado inicial definido para 0, mas ele será atualizado com a página salva no localStorage (se houver)
   const [currentPage, setCurrentPage] = useState(0);
 
   // Lista de páginas
@@ -18,18 +17,15 @@ const Book = () => {
     // Continue adicionando os capítulos na ordem desejada
   ];
 
-  // Função para salvar o progresso no localStorage
   const saveProgress = (page) => {
     localStorage.setItem('currentPage', page);
   };
 
-  // Função para atualizar o estado da página e salvar o progresso
   const setCurrentPageAndSave = (page) => {
     setCurrentPage(page);
     saveProgress(page);
   };
 
-  // Restaura o progresso do leitor ao carregar o componente
   useEffect(() => {
     const savedPage = localStorage.getItem('currentPage');
     if (savedPage) {
@@ -37,12 +33,10 @@ const Book = () => {
     }
   }, []);
 
-  // Função para ir ao capítulo a partir do menu
   const goToChapter = (pageIndex) => {
     setCurrentPageAndSave(pageIndex);
   };
 
-  // Funções de swipe (deslizar) para mudar de capítulo
   const handleSwipeLeft = () => {
     if (currentPage < pages.length - 1 && currentPage !== 'menu') {
       setCurrentPageAndSave(currentPage + 1);
@@ -55,7 +49,6 @@ const Book = () => {
     }
   };
 
-  // Configurações de swipe
   const swipeHandlers = useSwipeable({
     onSwipedLeft: handleSwipeLeft,  
     onSwipedRight: handleSwipeRight, 

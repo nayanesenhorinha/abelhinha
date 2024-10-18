@@ -1,0 +1,65 @@
+:root {
+    --vermelho-escuro-color: #A50000;
+    --vermelho-vivo-color: #d50032;
+    --vermelho-mate-color: #c72c41;
+    --black-color: #131313;
+    --white-color: #FFFDEA;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, 
+a, img, small, strong, 
+b, u, i, center,
+ol, ul, li, legend,
+figure, figcaption, footer, header, section  {
+    font-weight: normal;
+    font-size: 1rem; 
+    color: var(--font-color);
+}
+
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+.page {
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 1.5625rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* Para telas menores, como celulares */
+@media (max-width: 480px) {
+    .page {
+      max-width: 100%; 
+      padding: 1.25rem; 
+    }
+  }
+  
+  /* Para tablets e computadores */
+  @media (min-width: 481px) {
+    .page {
+      max-width: 400px; 
+    }
+  }

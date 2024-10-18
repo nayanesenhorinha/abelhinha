@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import NavigationButtons from '../components/NavigationButtons';
 import bookTitle from '../control/main';
 import chapters from '../control/chapters';
+import '../styles/chapters.css';
 
 const Chapter1 = ({ onPrev, onNext, goToMenu }) => {
   const chapterNumber = 1;
@@ -18,7 +19,7 @@ const Chapter1 = ({ onPrev, onNext, goToMenu }) => {
 
   return (
     <>
-      <div className="chapter_page">
+      <div className="page chapter_page">
         <h2 className="chapter_title">{chapterTitle}</h2>
         <span className="chapter_subtitle">{chapterRoman}</span>
         <div className="chapter_content">
