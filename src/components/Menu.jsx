@@ -1,7 +1,9 @@
 import React from 'react';
 import chapters from '../control/chapters';
+import NavigationButtons from '../components/NavigationButtons';
 
-const Menu = ({ goToChapter }) => {
+
+const Menu = ({ goToChapter , onPrev, onNext, goToMenu }) => {
   return (
     <div className="page menu">
       <h2>Sumário</h2>
@@ -14,6 +16,7 @@ const Menu = ({ goToChapter }) => {
           </li>
         ))}
       </ul>
+      <NavigationButtons onPrev={onPrev} onNext={onNext} goToMenu={goToMenu} />
     </div>
   );
 };

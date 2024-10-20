@@ -1,12 +1,12 @@
 import React from 'react';
+import NavigationButtons from '../components/NavigationButtons';
 
 const Cover = ({ onNext, goToMenu }) => {
 
   return (
-    <div className="page cover">
+    <div className="page">
       <h1>Capa do E-book</h1>
-      <button onClick={onNext}>Entrar no Livro</button>
-      <button onClick={() => goToMenu()}>Menu</button>
+      <NavigationButtons onNext={onNext} goToMenu={goToMenu} />
     </div>
   );
 };
