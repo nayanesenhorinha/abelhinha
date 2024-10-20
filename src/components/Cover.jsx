@@ -1,12 +1,12 @@
 import React from 'react';
-import NavigationButtons from '../components/NavigationButtons';
+import Navigation from './Navigation';
 
-const Cover = ({ onNext, goToMenu }) => {
+const Cover = ({ onNext, goToContents }) => {
 
   return (
     <div className="page">
       <h1>Capa do E-book</h1>
-      <NavigationButtons onNext={onNext} goToMenu={goToMenu} />
+      <Navigation onNext={onNext} goToContents={goToContents} />
     </div>
   );
 };

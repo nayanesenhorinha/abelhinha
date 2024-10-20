@@ -1,5 +1,5 @@
 const bookTitle = (chapterTitle) => {
-    let bookTitleT = "Alice's Adventures in Wonderland";
+    let bookTitleT = "As Aventuras de Alice no País das Maravilhas";
     document.title = `${chapterTitle} - ${bookTitleT}`;
   };
 

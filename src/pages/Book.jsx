@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable'; 
 import Cover from '../components/Cover';
-import Folha from '../components/Folha';
-import Autor from '../components/Autor';
-import Menu from '../components/Menu';
+import Infos1 from '../components/Infos1';
+import Infos2 from '../components/Infos2';
+import Contents from '../components/Contents';
 import Chapter1 from '../chapters/Chapter1';
 
 const Book = () => {
@@ -15,11 +15,11 @@ const Book = () => {
   };
   // Lista de páginas
   const pages = [
-    <Cover onNext={() => setCurrentPageAndSave(1)} goToMenu={() => setCurrentPageAndSave('menu')} />,
-    <Folha onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToMenu={() => setCurrentPageAndSave('menu')} />,
-    <Autor onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToMenu={() => setCurrentPageAndSave('menu')} />,
-    <Menu onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToMenu={() => setCurrentPageAndSave('menu')} />,
-    <Chapter1 onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToMenu={() => setCurrentPageAndSave('menu')} />,
+    <Cover onNext={() => setCurrentPageAndSave(1)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Infos1 onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Contents onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Chapter1 onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')} />,
 
     // Continue adicionando os capítulos na ordem desejada
   ];
@@ -63,7 +63,7 @@ const Book = () => {
   return (
     <>
       {currentPage === 'menu' ? (
-        <Menu goToChapter={goToChapter} />
+        <Contents goToChapter={goToChapter} />
       ) : (
         <div {...swipeHandlers}>
           {pages[currentPage]}

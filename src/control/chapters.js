@@ -1,16 +1,16 @@
 const chapters = {
-    1: { title: "Down the Rabbit-Hole", chap: "CHAPTER I" },
-    2: { title: "The Pool of Tears", chap: "CHAPTER II" },
-    3: { title: "A Caucus-Race and a Long Tale ", chap: "CHAPTER III" },
-    4: { title: "The Rabbit Sends in a Little Bill", chap: "CHAPTER IV" },
-    5: { title: "Advice from a Caterpillar", chap: "CHAPTER V" },
-    6: { title: "Pig and Pepper", chap: "CHAPTER VI" },
-    7: { title: "A Mad Tea-Party", chap: "CHAPTER VII" },
-    8: { title: "The Queen’s CroquetGround", chap: "CHAPTER VIII" },
-    9: { title: "The Mock Turtle’s Story", chap: "CHAPTER IX" },
-    10: { title: "The Lobster Quadrille", chap: "CHAPTER X" },
-    11: { title: "Who Stole the Tarts?", chap: "CHAPTER XI" },
-    12: { title: "Alice’s Evidence", chap: "CHAPTER XII" }
+    1: { title: "Dentro da toca do Coelho", chap: "I" },
+    2: { title: "A lagoa de lágrimas", chap: "II" },
+    3: { title: "A Corrida da Convenção e uma longa história", chap: "III" },
+    4: { title: "O Coelho envia o Pequeno Bill", chap: "IV" },
+    5: { title: "Conselhos de uma Largata", chap: "V" },
+    6: { title: "Porco e Pimenta", chap: "VI" },
+    7: { title: "Festa louca do chá", chap: "VII" },
+    8: { title: "O campo de croquet da Rainha", chap: "VIII" },
+    9: { title: "A história da tartaruga falsa", chap: "IX" },
+    10: { title: "A Quadrilha da Lagosta", chap: "X" },
+    11: { title: "Quem roubou as tortas?", chap: "XI" },
+    12: { title: "O depoimento de Alice", chap: "XII" }
   };
 
 export default chapters;
