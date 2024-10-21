@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import bookTitle from '../control/main';
 import chapters from '../control/chapters';
-import '../styles/chapters.css';
+import '../styles/ebook.css';
 
 const Chapter2 = ({ onPrev, onNext, goToContents, goToCover }) => {
   const chapterNumber = 2;

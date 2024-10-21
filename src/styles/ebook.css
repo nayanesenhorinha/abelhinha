@@ -1,3 +1,5 @@
+/* Variáveis e resets */
+
 :root {
     --vermelho-escuro-color: #A50000;
     --vermelho-vivo-color: #d50032;
@@ -82,4 +84,40 @@ body {
     background-color: transparent;
 }
 
-  
+
+/* Capítulos */
+
+.chapter_title {
+    margin: 1.25rem 0 0.625rem;
+}
+
+.chapter_subtitle {
+    font-size: 12px;
+}
+
+.chapter_content {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chapter_text {
+    color: var(--black-color);
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 15px;
+    font-family: "Imprima";
+    font-size: 15px;
+    line-height: 25px;
+
+    /*  
+    font-family: "Hind Siliguri";
+    font-family: "Molengo";
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Overpass";
+    font-family: "Imprima";
+    
+
+    */
+}

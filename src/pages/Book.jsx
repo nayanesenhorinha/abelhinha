@@ -3,6 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import Cover from '../components/Cover';
 import Infos1 from '../components/Infos1';
 import Infos2 from '../components/Infos2';
+import Credits from '../components/Credits';
 import Contents from '../components/Contents';
 import Chapter1 from '../chapters/Chapter1';
 import Chapter2 from '../chapters/Chapter2';
@@ -23,11 +24,13 @@ const Book = () => {
 />,
     <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} 
 />,
-    <Contents onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')}  goToChapter={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+    <Credits onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')}  goToChapter={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} 
 />,
-    <Chapter1 onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+    <Contents onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')}  goToChapter={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} 
 />,
-    <Chapter2 onPrev={() => setCurrentPageAndSave(4)} onNext={() => setCurrentPageAndSave(6)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+    <Chapter1 onPrev={() => setCurrentPageAndSave(4)} onNext={() => setCurrentPageAndSave(6)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+/>,
+    <Chapter2 onPrev={() => setCurrentPageAndSave(5)} onNext={() => setCurrentPageAndSave(7)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
 />,
     // Continue adicionando os capítulos na ordem desejada
   ];
