@@ -2,23 +2,27 @@ import React from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
 
-const Contents = ({ goToChapter , onPrev, onNext, goToContents }) => {
+const Contents = ({ goToChapter, onPrev, onNext, goToContents }) => {
   return (
     <div className="page menu">
       <h2>Sumário</h2>
       <ul>
         {Object.entries(chapters).map(([chapterNumber, chapterData]) => (
           <li key={chapterNumber}>
-            <button onClick={() => goToChapter(Number(chapterNumber)-3)}>
-              {`${chapterNumber}: ${chapterData.title}`} {/* Título do capítulo aqui */}
+            <button onClick={() => goToChapter(Number(chapterNumber)+3)}>
+              {`${chapterNumber}: ${chapterData.title}`}
             </button>
           </li>
         ))}
       </ul>
-      <Navigation onPrev={onPrev} onNext={onNext} goToContents={goToContents} />
+
+      <Navigation 
+        onPrev={onPrev} 
+        onNext={onNext} 
+        goToContents={goToContents} 
+      />
     </div>
   );
 };
 
 export default Contents;
-
