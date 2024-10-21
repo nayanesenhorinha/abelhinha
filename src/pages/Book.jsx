@@ -18,7 +18,7 @@ const Book = () => {
     <Cover onNext={() => setCurrentPageAndSave(1)} goToContents={() => setCurrentPageAndSave('menu')} />,
     <Infos1 onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToContents={() => setCurrentPageAndSave('menu')} />,
     <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Contents goToChapter={goToChapter} onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Contents onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')} />,
     <Chapter1  onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')} />,
 
     // Continue adicionando os capítulos na ordem desejada
