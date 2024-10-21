@@ -1,3 +1,11 @@
+:root {
+    --vermelho-escuro-color: #A50000;
+    --vermelho-vivo-color: #d50032;
+    --vermelho-mate-color: #c72c41;
+    --black-color: #33332F;
+    --white-color: #f6f6f6;
+}
+
 .chapter_title {
     margin: 1.25rem 0 0.625rem;
 }
@@ -14,6 +22,7 @@
 }
 
 .chapter_text {
+    color: var(--black-color);
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 15px;

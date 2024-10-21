@@ -19,11 +19,16 @@ const Book = () => {
   
   const pages = [
     <Cover onNext={() => setCurrentPageAndSave(1)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Infos1 onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Contents onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')}  goToChapter={() => setCurrentPageAndSave('menu')}/>,
-    <Chapter1 onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Chapter2 onPrev={() => setCurrentPageAndSave(4)} onNext={() => setCurrentPageAndSave(6)} goToContents={() => setCurrentPageAndSave('menu')} />,
+    <Infos1 onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} 
+/>,
+    <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} 
+/>,
+    <Contents onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')}  goToChapter={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+/>,
+    <Chapter1 onPrev={() => setCurrentPageAndSave(3)} onNext={() => setCurrentPageAndSave(5)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+/>,
+    <Chapter2 onPrev={() => setCurrentPageAndSave(4)} onNext={() => setCurrentPageAndSave(6)} goToContents={() => setCurrentPageAndSave('menu')}   goToCover={() => setCurrentPageAndSave(0)} 
+/>,
     // Continue adicionando os capítulos na ordem desejada
   ];
 
@@ -37,6 +42,12 @@ const Book = () => {
       setCurrentPage(savedPage === 'menu' ? 'menu' : parseInt(savedPage, 10));
     }
   }, []);
+
+  //goToCover={() => setCurrentPageAndSave(0)}
+
+  const goToCover = () => {
+    setCurrentPageAndSave(0);
+  };
 
   const goToChapter = (pageIndex) => {
     setCurrentPageAndSave(pageIndex);
@@ -68,7 +79,8 @@ const Book = () => {
         goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)} 
         onPrev={() => setCurrentPageAndSave(currentPage - 1)} 
         onNext={() => setCurrentPageAndSave(currentPage + 1)} 
-        goToContents={() => setCurrentPageAndSave('menu')} 
+        goToContents={() => setCurrentPageAndSave('menu')}
+        
       />
       ) : (
         <div {...swipeHandlers}>

@@ -2,8 +2,8 @@
     --vermelho-escuro-color: #A50000;
     --vermelho-vivo-color: #d50032;
     --vermelho-mate-color: #c72c41;
-    --black-color: #131313;
-    --white-color: #FFFDEA;
+    --black-color: #33332F;
+    --white-color: #f6f6f6;
 }
 
 * {
@@ -58,3 +58,28 @@ body {
       max-width: 400px; 
     }
   }
+
+  /* Menu */
+
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    background-color: #33332F;
+}
+
+.navigation button {
+    background-color: transparent;
+}
+
+  

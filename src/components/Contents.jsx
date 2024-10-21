@@ -2,7 +2,7 @@ import React from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
 
-const Contents = ({ goToChapter, onPrev, onNext, goToContents }) => {
+const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
   return (
     <div className="page menu">
       <h2>Sumário</h2>
@@ -19,7 +19,7 @@ const Contents = ({ goToChapter, onPrev, onNext, goToContents }) => {
       <Navigation 
         onPrev={onPrev} 
         onNext={onNext} 
-        goToContents={goToContents} 
+        goToCover={goToCover} 
       />
     </div>
   );

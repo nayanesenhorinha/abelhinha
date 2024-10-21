@@ -4,7 +4,7 @@ import bookTitle from '../control/main';
 import chapters from '../control/chapters';
 import '../styles/chapters.css';
 
-const Chapter2 = ({ onPrev, onNext, goToContents }) => {
+const Chapter2 = ({ onPrev, onNext, goToContents, goToCover }) => {
   const chapterNumber = 2;
 
   const chapterTitle = chapters[chapterNumber].title;
@@ -52,7 +52,7 @@ const Chapter2 = ({ onPrev, onNext, goToContents }) => {
           <p className="chapter_ret">* * * *</p>  
 
         </div>
-        <Navigation onPrev={onPrev} onNext={onNext} goToContents={goToContents} />
+        <Navigation goToCover={goToCover} onPrev={onPrev} onNext={onNext} goToContents={goToContents} />
       </div>
     </>
   );
