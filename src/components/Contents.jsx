@@ -9,7 +9,7 @@ const Contents = ({ goToChapter , onPrev, onNext, goToContents }) => {
       <ul>
         {Object.entries(chapters).map(([chapterNumber, chapterData]) => (
           <li key={chapterNumber}>
-            <button onClick={() => goToChapter(Number(chapterNumber))}>
+            <button onClick={() => goToChapter(Number(chapterNumber)-3)}>
               {`${chapterNumber}: ${chapterData.title}`} {/* Título do capítulo aqui */}
             </button>
           </li>
