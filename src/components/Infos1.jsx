@@ -14,9 +14,11 @@ const Infos1 = ({
       <p className="info_nome_autor">
         Lewis Carroll
       </p>
+      
       <h1 className="info_titulo_livro">
         As Aventuras de Alice no País das Maravilhas
       </h1>
+      
       <img className="info_logo_editora" src="https://via.placeholder.com/50" alt="Imagem Placeholder"/>
       
       <Navigation 

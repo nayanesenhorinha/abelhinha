@@ -1,11 +1,13 @@
-/* Variáveis e resets */
+/* VARIÁVEIS E RESETS */
 
 :root {
     --vermelho-escuro-color: #A50000;
     --vermelho-vivo-color: #d50032;
     --vermelho-mate-color: #c72c41;
-    --black-color: #33332F;
-    --white-color: #f6f6f6;
+    --preto: #33332F;
+    --branco: #f6f6f6;
+    --font-text: "Source Sans 3";
+    --font-size: 0.9375rem;
 }
 
 * {
@@ -17,13 +19,14 @@
  
 h1, h2, h3, h4, h5, h6, p  {
     font-weight: normal;
-    font-size: 1rem; 
-    color: var(--font-color);
+    font-size: var(--font-size); 
+    color: var(--preto);
+    font-family: var(--font-text);
 }
 
 a, a:link, a:hover, a:visited, a:active {
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--preto);
 }
 
 li {
@@ -31,7 +34,7 @@ li {
 }
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--branco);
 }
 
 .page {
@@ -44,13 +47,14 @@ body {
     justify-content: center; 
     align-items: center;
     overflow-y: auto;
+    margin-bottom: 4rem;
 }
 
 /* Para telas menores, como celulares */
 @media (max-width: 480px) {
     .page {
       max-width: 100%; 
-      padding: 1.25rem; 
+      padding: 1.5625rem; 
     }
   }
   
@@ -61,31 +65,77 @@ body {
     }
   }
 
-  /* Menu */
 
-.navigation {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-radius: 50px;
+/* INFOS1 */
+
+.info {
+    margin-top: 1.875rem;
+}
+
+.info_nome_autor {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info_titulo_livro {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2.5rem 1.25rem;
+
+}
+
+
+
+
+/* CRÉDITOS */
+
+.credits {
+    margin-top: 1.875rem;
+}
+
+.produtor_titulo, .agradecimentos_titulo {
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
+}
+
+.produtor_nome, .agradecimentos_nome p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.credits_text {
+    text-align: justify;
+    margin: 1.25rem 0;
+    line-height: 1.5625rem;
+    padding: 0 1.25rem;
+}
+
+.credits_logo_editora {
+    margin-bottom: 1.25rem;
+}
+
+.agradecimentos_nome {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
+    flex-direction: column;
     align-items: center;
-    background-color: #33332F;
-}
-
-.navigation button {
-    background-color: transparent;
+    gap: 2px;
+    text-transform: uppercase;
 }
 
 
-/* Capítulos */
+
+
+
+
+
+
+
+
+
+
+/* CAPÍTULOS */
 
 .chapter_title {
     margin: 1.25rem 0 0.625rem;
@@ -103,21 +153,38 @@ body {
 }
 
 .chapter_text {
-    color: var(--black-color);
+    color: var(--preto);
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 15px;
-    font-family: "Imprima";
-    font-size: 15px;
-    line-height: 25px;
+    font-family: var(--font-text);
+    font-size: var(--font-size);
+    line-height: 1.5625rem;
+}
 
-    /*  
-    font-family: "Hind Siliguri";
-    font-family: "Molengo";
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Overpass";
-    font-family: "Imprima";
-    
 
-    */
+
+
+
+  /* MENU */
+
+  .navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--preto);
+}
+
+.navigation button {
+    background-color: transparent;
 }
