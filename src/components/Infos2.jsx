@@ -24,9 +24,9 @@ const Infos2 = ({
       <Navigation 
         onPrev={onPrev} 
         onNext={onNext} 
-        oToCover={goToCover}  
+        goToCover={goToCover}  
         goToContents={goToContents} />
-        
+
     </div>
   );
 };

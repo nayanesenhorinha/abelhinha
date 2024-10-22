@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from './Navigation';
 import '../styles/ebook.css';
+import bookTitle from '../control/main';
 
 const Credits = ({ 
     onNext, 
     onPrev, 
     goToContents, 
     goToCover }) => {
+
+    const chapterTitle = "Créditos";
+
+    useEffect(() => {
+        bookTitle(chapterTitle); 
+        return () => {
+            document.title = "As Aventuras de Alice no País das Maravilhas"; 
+        };
+    }, [chapterTitle]);
 
   return (
     <div className="page credits">

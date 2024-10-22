@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
 import '../styles/ebook.css';
+import bookTitle from '../control/main';
 
 const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
+
+  const chapterTitle = "Sumário";
+
+  useEffect(() => {
+    bookTitle(chapterTitle); 
+      return () => {
+          document.title = "As Aventuras de Alice no País das Maravilhas"; 
+      };
+      }, [chapterTitle]);
+
   return (
     <div className="page menu">
       <h2 className="menu_titulo">Sumário</h2>

@@ -8,10 +8,6 @@ const Navigation = ({ onPrev, onNext, goToContents, goToCover }) => {
         <button onClick={goToContents}>
           <img src="src\assets\menu.png" alt="Sumário" className="nav-icon" />
         </button>}
-      {onPrev && 
-        <button onClick={onPrev}>
-          <img src="src\assets\antes.png" alt="Anterior" className="nav-icon" />
-        </button>}
       
       {goToCover && 
         <button onClick={goToCover}>
