@@ -10,7 +10,7 @@ const chapters = {
     9: { title: "A história da tartaruga falsa", chap: "IX" },
     10: { title: "A Quadrilha da Lagosta", chap: "X" },
     11: { title: "Quem roubou as tortas?", chap: "XI" },
-    12: { title: "O depoimento de Alice", chap: "XII" }
+    12: { title: "Depoimento de Alice", chap: "XII" }
   };
 
 export default chapters;

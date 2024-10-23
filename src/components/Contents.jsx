@@ -17,15 +17,16 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
 
   return (
     <div className="page menu">
+      <img className="autor_icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
       <h2 className="menu_titulo">Sumário</h2>
       <ul className="menu_lista">
-        <li className="lista-item"> 
-          <button onClick={() => goToChapter(0)}>
+        <li> 
+          <button className="lista-item" onClick={() => goToChapter(0)}>
             Capa
           </button>
         </li>
-        <li className="lista-item">
-          <button onClick={() => goToChapter(3)}>
+        <li >
+          <button className="lista-item" onClick={() => goToChapter(3)}>
             Créditos
           </button>
         </li>
@@ -36,7 +37,7 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
           <li key={chapterNumber}>
             
             <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber)+3)}>
-              {`${chapterNumber}: ${chapterData.title}`}
+              {`${chapterData.title}`}
             </button>
           </li>
         ))}

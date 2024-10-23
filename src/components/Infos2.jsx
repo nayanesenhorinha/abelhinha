@@ -19,7 +19,6 @@ const Infos2 = ({
       <p className="autor_nome">
         Lewis Carroll
       </p>
-      <img className="autor_icone_rodape" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
       
       <Navigation 
         onPrev={onPrev} 
