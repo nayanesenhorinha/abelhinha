@@ -1,9 +1,9 @@
 /* VARIÁVEIS E RESETS */
 
 :root {
-    --vermelho-escuro-color: #A50000;
-    --vermelho-vivo-color: #d50032;
-    --vermelho-mate-color: #c72c41;
+    --primeira-cor: #A50000;
+    --segunda-cor: #d50032;
+    --terceira-cor: #c72c41;
     --preto: #33332F;
     --branco: #f6f6f6;
     --font-text: "Source Sans 3";
@@ -36,6 +36,12 @@ li {
 body {
     background-color: var(--branco);
 }
+
+::selection {
+    background: var(--primeira-cor); 
+    color: var(--branco);
+}
+
 
 .page {
     max-width: 400px; 
@@ -135,11 +141,13 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 10px 0;
-    color: var(--vermelho-escuro-color)
+    color: var(--primeira-cor)
 }
 
 .menu_titulo {
     margin-top: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 /* CRÉDITOS */
@@ -181,11 +189,15 @@ body {
 /* CAPÍTULOS */
 
 .chapter_title {
-    margin: 1.25rem 0 0.625rem;
+    margin: 20px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primeira-cor)
 }
 
 .chapter_subtitle {
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .chapter_content {
@@ -204,10 +216,6 @@ body {
     font-size: var(--font-size);
     line-height: 1.5625rem;
 }
-
-
-
-
 
   /* MENU */
 

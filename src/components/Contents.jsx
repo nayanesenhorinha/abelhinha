@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
 import '../styles/ebook.css';
-import bookTitle from '../control/main';
+import bookTitle from '../control/title';
 
 const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
 
@@ -36,7 +36,7 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
         {Object.entries(chapters).map(([chapterNumber, chapterData]) => (
           <li key={chapterNumber}>
             
-            <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber)+3)}>
+            <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber)+4)}>
               {`${chapterData.title}`}
             </button>
           </li>

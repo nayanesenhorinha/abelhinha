@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
-import bookTitle from '../control/main';
+import bookTitle from '../control/title';
 import chapters from '../control/chapters';
 import '../styles/ebook.css';
 
@@ -20,10 +20,11 @@ const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
   return (
     <>
       <div className="page chapter_page">
-        <h2 className="chapter_title">{chapterTitle}</h2>
+        <img className="chapter_img" src="https://via.placeholder.com/200" alt="Imagem Placeholder"/>
         <span className="chapter_subtitle">{chapterRoman}</span>
+        <h2 className="chapter_title">{chapterTitle}</h2>
         <div className="chapter_content">
-        <p className="chapter_text">Alice estava cansada de ficar sentada sem ter nada para fazer. Uma ou duas vezes, ela espiou o livro que sua irmã lia a seu lado, mas ele não tinha figuras nem diálogos. “E de que serve um livro,” pensou Alice, “sem figuras ou diálogos?”</p>
+          <p className="chapter_text">Alice estava cansada de ficar sentada sem ter nada para fazer. Uma ou duas vezes, ela espiou o livro que sua irmã lia a seu lado, mas ele não tinha figuras nem diálogos. “E de que serve um livro,” pensou Alice, “sem figuras ou diálogos?”</p>
           <p className="chapter_text">Ela pensava consigo mesma (na medida em que podia, já que o calor a fazia sentir-se muito sonolenta e lerda) se o esforço de levantar-se para colher margaridas valeria o prazer de fazer uma guirlanda. Foi quando, de repente, um Coelho Branco de olhos rosados passou correndo perto dela.</p>
           <p className="chapter_text">Não havia nada de tão extraordinário nisso; e Alice não achou tão estranho ouvir o Coelho dizer para si mesmo: “Oh céus! Oh céus! Vou me atrasar!” (quando pensou nisso mais tarde, ela percebeu que deveria ter se espantado, mas na hora tudo parecia muito natural); mas quando o Coelho tirou um relógio do bolso do colete, olhou para ele e saiu correndo apressado, Alice se levantou de um salto, pois lhe ocorreu que nunca tinha visto um coelho com um bolso de colete, muito menos com um relógio para tirar de lá. Queimando de curiosidade, ela atravessou o campo correndo atrás dele, e, felizmente, chegou bem a tempo de vê-lo desaparecer dentro de um grande buraco de coelho sob a cerca.</p>
           <p className="chapter_text">No mesmo instante, Alice entrou atrás dele, sem sequer considerar como iria sair de lá.</p>

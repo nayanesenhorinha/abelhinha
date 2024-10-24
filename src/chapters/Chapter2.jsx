@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
-import bookTitle from '../control/main';
+import bookTitle from '../control/title';
 import chapters from '../control/chapters';
 import '../styles/ebook.css';
 
