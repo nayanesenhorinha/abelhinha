@@ -129,7 +129,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .lista-item, .menu_topico {
@@ -141,21 +141,22 @@ body {
 .menu_topico, .menu_titulo {
     font-weight: bold;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 0.625rem 0;
     color: var(--preto);
 }
 
 .menu_titulo {
-    margin-top: 30px;
-    font-size: 25px;
+    margin-top: 1.875rem;
+    font-size: 1.5625rem;
     text-transform: capitalize;
     font-family: var(--font-titulos);
+    margin-bottom: 1.25rem;
 }
 
 /* CRÉDITOS */
 
 .credits {
-    margin-top: 1.875rem;
+    margin-top: 1.5rem;
 }
 
 .produtor_titulo, .agradecimentos_titulo {
@@ -184,7 +185,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
+    gap: 0.125rem;
     text-transform: uppercase;
 }
 
@@ -192,19 +193,19 @@ body {
 
 .chapter_title {
     font-family: var(--font-titulos);
-    margin: 20px 0 0;
+    margin: 1.25rem 0 0;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: var(--preto)
 }
 
 .chapter_subtitle {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
 }
 
 .chapter_content {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,8 +214,8 @@ body {
 .chapter_text {
     color: var(--preto);
     text-align: justify;
-    margin-bottom: 10px;
-    text-indent: 15px;
+    margin-bottom: 0.625rem;
+    text-indent: 0.9375rem;
     font-family: var(--font-text);
     font-size: var(--font-size);
     line-height: 1.5625rem;
@@ -224,17 +225,17 @@ body {
 
   .navigation {
     position: fixed;
-    bottom: 20px;
+    bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 8px;
+    gap: 0.5rem;
     align-items: center;
     background-color: var(--preto);
 }

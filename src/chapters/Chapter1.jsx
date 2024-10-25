@@ -23,6 +23,7 @@ const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
         <img className="chapter_img" src="https://via.placeholder.com/200" alt="Imagem Placeholder"/>
         <span className="chapter_subtitle">{chapterRoman}</span>
         <h2 className="chapter_title">{chapterTitle}</h2>
+        
         <div className="chapter_content">
           <p className="chapter_text">Alice estava cansada de ficar sentada sem ter nada para fazer. Uma ou duas vezes, ela espiou o livro que sua irmã lia a seu lado, mas ele não tinha figuras nem diálogos. “E de que serve um livro,” pensou Alice, “sem figuras ou diálogos?”</p>
           <p className="chapter_text">Ela pensava consigo mesma (na medida em que podia, já que o calor a fazia sentir-se muito sonolenta e lerda) se o esforço de levantar-se para colher margaridas valeria o prazer de fazer uma guirlanda. Foi quando, de repente, um Coelho Branco de olhos rosados passou correndo perto dela.</p>
