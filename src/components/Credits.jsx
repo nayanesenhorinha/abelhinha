@@ -27,7 +27,7 @@ const Credits = ({
             Nayane de Souza
         </p>
         <p className="credits_text">
-        Este e-book foi desenvolvido como parte do trabalho de conclusão do curso de Produção Editorial da Universidade Federal do Rio de Janeiro. Todos os aspectos deste projeto — desde o design editorial, tradução até o desenvolvimento — foram resultados da pesquisa de Nayane de Souza. Agradeço a todos que acompanharam e apoiaram este trabalho. Este projeto representa a conclusão de uma jornada acadêmica dedicada ao design de livros.
+        Este e-book foi desenvolvido como parte do trabalho de conclusão do curso de Produção Editorial da Universidade Federal do Rio de Janeiro. Todos os aspectos deste projeto — desde o design, tradução até o desenvolvimento — foram resultados da pesquisa de Nayane de Souza. Agradeço a todos que acompanharam e apoiaram este trabalho. Este projeto representa a conclusão de uma jornada acadêmica dedicada ao design de livros.
         </p>
         <img className="credits_logo_editora" src="https://via.placeholder.com/50" alt="Imagem Placeholder"/>
         <p className="agradecimentos_titulo">

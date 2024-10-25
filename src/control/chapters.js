@@ -1,5 +1,5 @@
 const chapters = {
-    1: { title: "Dentro da toca do Coelho", chap: "I" },
+    1: { title: "Na toca do Coelho", chap: "I" },
     2: { title: "A lagoa de lágrimas", chap: "II" },
     3: { title: "A Corrida da Convenção e uma longa história", chap: "III" },
     4: { title: "O Coelho envia o Pequeno Bill", chap: "IV" },
