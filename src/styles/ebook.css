@@ -1,9 +1,9 @@
 /* VARIÁVEIS E RESETS */
 
 :root {
-    --primeira-cor: #A50000;
-    --segunda-cor: #d50032;
-    --terceira-cor: #c72c41;
+    --vermelho: #EC1C24;
+    --rosa: #F26DAB;
+    --azul: #3DD1F2;
     --preto: #33332F;
     --branco: #f6f6f6;
     --font-text: "Source Sans 3";
@@ -39,7 +39,7 @@ body {
 }
 
 ::selection {
-    background: var(--primeira-cor); 
+    background: var(--rosa); 
     color: var(--branco);
 }
 
@@ -58,7 +58,6 @@ body {
     margin-top: 1rem;
 }
 
-/* Para telas menores, como celulares */
 @media (max-width: 480px) {
     .page {
       max-width: 100%; 
@@ -66,15 +65,21 @@ body {
     }
   }
   
-  /* Para tablets e computadores */
-  @media (min-width: 481px) {
+@media (min-width: 481px) {
     .page {
       max-width: 400px; 
     }
   }
 
-/* INFOS1 */
+/* INFOS1::FOLHA DE ROSTO*/
 
+.info {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
 .info_nome_autor {
     margin-top: 1rem;
@@ -86,17 +91,12 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    margin: 4rem 1.25rem;
-
+    margin: 0 3rem;
 }
 
-.info_logo_editora {
-    position: fixed;
-    bottom: 7.5rem;
-}
 
-/* INFOS2 */
 
+/* INFOS2::LEWIS CARROLL */
 
 .autor_intro {
     margin: 2rem 0;
@@ -110,6 +110,40 @@ body {
     font-size: 2rem;
     bottom: 9.375rem;
 }
+
+.autor_foto {
+    position: absolute; /* Ou fixed para manter o elemento fixo ao rolar a página */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CRÉDITOS */
+
+.credits {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cabeco_creditos {
+    margin-bottom: 40px;
+}
+
+.credits_text {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    line-height: 1.5625rem;
+    padding: 0 3rem;
+}
+
+.credits_logo_editora {
+    margin: 1.25rem 0;
+}
+
+
 
 /* SUMÁRIO */
 
@@ -149,23 +183,6 @@ body {
     margin-bottom: 1.25rem;
 }
 
-/* CRÉDITOS */
-
-
-.cabeco_creditos {
-    margin-bottom: 40px;
-}
-
-.credits_text {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    line-height: 1.5625rem;
-    padding: 0 2rem;
-}
-
-.credits_logo_editora {
-    margin: 1.25rem 0;
-}
 
 
 
@@ -175,17 +192,17 @@ body {
     margin-top: -1rem;
 }
 
+.chapter_subtitle {
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
+}
+
 .chapter_title {
     font-family: var(--font-titulos);
     margin: 1.25rem 0 0;
     font-weight: bold;
     font-size: 1.5625rem;
     color: var(--preto)
-}
-
-.chapter_subtitle {
-    font-size: 0.75rem;
-    margin-top: 1.25rem;
 }
 
 .chapter_img_abertura {

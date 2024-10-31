@@ -25,7 +25,6 @@ const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
         <img className="chapter_img_abertura" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
         <div className="chapter_content">
           <p className="chapter_text">Alice estava cansada de ficar sentada sem ter nada para fazer. Uma ou duas vezes, ela espiou o livro que sua irmã lia a seu lado, mas ele não tinha figuras nem diálogos. “E de que serve um livro,” pensou Alice, “sem figuras ou diálogos?”</p>
-          <img className="chapter_img" src="https://via.placeholder.com/200" alt="Imagem Placeholder"/>
           <p className="chapter_text">Ela pensava consigo mesma (na medida em que podia, já que o calor a fazia sentir-se muito sonolenta e lerda) se o esforço de levantar-se para colher margaridas valeria o prazer de fazer uma guirlanda. Foi quando, de repente, um Coelho Branco de olhos rosados passou correndo perto dela.</p>
           <p className="chapter_text">Não havia nada de tão extraordinário nisso; e Alice não achou tão estranho ouvir o Coelho dizer para si mesmo: “Oh céus! Oh céus! Vou me atrasar!” (quando pensou nisso mais tarde, ela percebeu que deveria ter se espantado, mas na hora tudo parecia muito natural); mas quando o Coelho tirou um relógio do bolso do colete, olhou para ele e saiu correndo apressado, Alice se levantou de um salto, pois lhe ocorreu que nunca tinha visto um coelho com um bolso de colete, muito menos com um relógio para tirar de lá. Queimando de curiosidade, ela atravessou o campo correndo atrás dele, e, felizmente, chegou bem a tempo de vê-lo desaparecer dentro de um grande buraco de coelho sob a cerca.</p>
           <p className="chapter_text">No mesmo instante, Alice entrou atrás dele, sem sequer considerar como iria sair de lá.</p>
@@ -52,6 +51,7 @@ const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
           <p className="chapter_text">Ela comeu um pedacinho e disse ansiosamente para si mesma: "De que lado? De que lado?", segurando a mão no topo da cabeça para sentir de que lado estava crescendo, e ficou bastante surpresa ao perceber que permanecia do mesmo tamanho: claro, isso geralmente acontece quando se come bolo, mas Alice já estava acostumada a esperar coisas extraordinárias, que parecia bastante entediante e bobo que a vida continuasse do jeito comum.</p> 
           <p className="chapter_text">Então, ela se pôs a trabalhar e logo terminou de comer o bolo.</p>  
           <p className="chapter_ret">* * * *</p>  
+          <img className="chapter_img" src="https://via.placeholder.com/200" alt="Imagem Placeholder"/>
 
         </div>
         <Navigation goToCover={goToCover} onPrev={onPrev} onNext={onNext} goToContents={goToContents} />
