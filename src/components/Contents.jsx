@@ -17,7 +17,7 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
 
   return (
     <div className="page menu">
-      <img className="autor_icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
+      <img className="icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
       <h2 className="menu_titulo">Sumário</h2>
       <ul className="menu_lista">
         <li> 

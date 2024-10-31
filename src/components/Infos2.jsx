@@ -11,7 +11,7 @@ const Infos2 = ({
   return (
     <div className="page autor">
 
-      <img className="autor_icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
+      <img className="icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
       <p className="autor_intro">
         uma história de
       </p>

@@ -55,6 +55,7 @@ body {
     align-items: center;
     overflow-y: auto;
     margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 /* Para telas menores, como celulares */
@@ -74,11 +75,9 @@ body {
 
 /* INFOS1 */
 
-.info {
-    margin-top: 1.875rem;
-}
 
 .info_nome_autor {
+    margin-top: 1rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -98,12 +97,9 @@ body {
 
 /* INFOS2 */
 
-.autor {
-    margin-top: 1.25rem;
-}
 
 .autor_intro {
-    margin: 3.75rem 0;
+    margin: 2rem 0;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -115,7 +111,7 @@ body {
     bottom: 9.375rem;
 }
 
-/* MENU */
+/* SUMÁRIO */
 
 .menu {
     display: flex;
@@ -155,41 +151,29 @@ body {
 
 /* CRÉDITOS */
 
-.credits {
-    margin-top: 1.5rem;
-}
 
-.produtor_titulo, .agradecimentos_titulo {
-    font-weight: bold;
-    font-size: 0.875rem;
-    margin-bottom: 0.625rem;
-}
-
-.produtor_nome, .agradecimentos_nome p {
-    font-weight: bold;
-    text-transform: uppercase;
+.cabeco_creditos {
+    margin-bottom: 40px;
 }
 
 .credits_text {
-    text-align: justify;
-    margin: 1.25rem 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
     line-height: 1.5625rem;
     padding: 0 2rem;
 }
 
 .credits_logo_editora {
-    margin-bottom: 1.25rem;
+    margin: 1.25rem 0;
 }
 
-.agradecimentos_nome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.125rem;
-    text-transform: uppercase;
-}
+
 
 /* CAPÍTULOS */
+
+.chapter_page {
+    margin-top: -1rem;
+}
 
 .chapter_title {
     font-family: var(--font-titulos);
@@ -204,8 +188,12 @@ body {
     margin-top: 1.25rem;
 }
 
+.chapter_img_abertura {
+    margin: 20px 0 0;
+}
+
 .chapter_content {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

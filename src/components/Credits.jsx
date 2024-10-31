@@ -20,16 +20,24 @@ const Credits = ({
 
   return (
     <div className="page credits">
+        {/*
         <p className="produtor_titulo">
                 Projeto Gráfico e Editorial
         </p>
         <p className="produtor_nome">
             Nayane de Souza
         </p>
+        */}
+        <img className="icone_cabeco cabeco_creditos" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
+
         <p className="credits_text">
-        Este e-book foi desenvolvido como parte do trabalho de conclusão do curso de Produção Editorial da Universidade Federal do Rio de Janeiro. Todos os aspectos deste projeto — desde o design, tradução até o desenvolvimento — foram resultados da pesquisa de Nayane de Souza. Agradeço a todos que acompanharam e apoiaram este trabalho. Este projeto representa a conclusão de uma jornada acadêmica dedicada ao design de livros.
+            Este e-book foi concebido como projeto de conclusão do curso de Produção Editorial na UFRJ, um trabalho que nasceu da persistência e do encantamento pelas palavras.
+        </p>
+        <p className="credits_text">
+            Agradeço, com especial carinho, ao João Victor, por sua paciência e olhar encorajador; à minha mãe, por seu suporte constante; e ao meu orientador, que, com seu saber cuidadoso, guiou cada etapa desta jornada.
         </p>
         <img className="credits_logo_editora" src="https://via.placeholder.com/50" alt="Imagem Placeholder"/>
+        {/*
         <p className="agradecimentos_titulo">
             Agradecimentos
         </p>
@@ -39,7 +47,7 @@ const Credits = ({
             <p>&</p>
             <p>João Victor da Conceição Alves</p>
         </div>
-
+        */}
         <Navigation 
             onPrev={onPrev} 
             goToCover={goToCover} 
