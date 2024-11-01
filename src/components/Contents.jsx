@@ -38,10 +38,6 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
       </td>
     </tr>
 
-    <tr>
-      <td colSpan="2" className="menu_topico">Aventuras de Alice</td>
-    </tr>
-
     {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
       <tr key={chapterNumber}>
         <td className="lista_topico">{Number(chapterNumber)}</td>
