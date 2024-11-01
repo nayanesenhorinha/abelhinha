@@ -40,7 +40,7 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
 
     {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
       <tr key={chapterNumber}>
-        <td className="lista_topico">{Number(chapterNumber)}</td>
+        <td className="lista_topico">{chapterData.chap}</td>
         <td>
           <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber) + 4)}>
             {chapterData.title}
