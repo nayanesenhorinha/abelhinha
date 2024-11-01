@@ -18,30 +18,42 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
   return (
     <div className="page menu">
       <img className="icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
-      <h2 className="menu_titulo">Sumário</h2>
-      <ul className="menu_lista">
-        <li> 
-          <button className="lista-item" onClick={() => goToChapter(0)}>
-            Capa
+
+      <table className="menu_tabela">
+  <tbody>
+    <tr>
+      <td className="lista_topico">0</td>
+      <td>
+        <button className="lista-item" onClick={() => goToChapter(0)}>
+          Capa
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td className="lista_topico">3</td>
+      <td>
+        <button className="lista-item" onClick={() => goToChapter(3)}>
+          Créditos
+        </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td colSpan="2" className="menu_topico">Aventuras de Alice</td>
+    </tr>
+
+    {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
+      <tr key={chapterNumber}>
+        <td className="lista_topico">{Number(chapterNumber)}</td>
+        <td>
+          <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber) + 4)}>
+            {chapterData.title}
           </button>
-        </li>
-        <li >
-          <button className="lista-item" onClick={() => goToChapter(3)}>
-            Créditos
-          </button>
-        </li>
-        <p className="menu_topico">
-          Aventuras de Alice
-        </p>
-        {Object.entries(chapters).map(([chapterNumber, chapterData]) => (
-          <li key={chapterNumber}>
-            
-            <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber)+4)}>
-              {`${chapterData.title}`}
-            </button>
-          </li>
-        ))}
-      </ul>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
       <Navigation 
         onPrev={onPrev} 

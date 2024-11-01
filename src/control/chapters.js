@@ -1,7 +1,7 @@
 const chapters = {
     1: { title: "Na toca do Coelho", chap: "I" },
     2: { title: "A lagoa de lágrimas", chap: "II" },
-    3: { title: "A Corrida da Convenção e uma longa história", chap: "III" },
+    3: { title: "A Corrida da Convenção", chap: "III" },
     4: { title: "O Coelho envia o Pequeno Bill", chap: "IV" },
     5: { title: "Conselhos de uma Largata", chap: "V" },
     6: { title: "Porco e Pimenta", chap: "VI" },

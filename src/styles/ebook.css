@@ -143,8 +143,6 @@ body {
     margin: 1.25rem 0;
 }
 
-
-
 /* SUMÁRIO */
 
 .menu {
@@ -154,36 +152,36 @@ body {
     align-items: center;
 }
 
-.menu_lista {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
+.menu_topico {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.125rem solid var(--preto); 
+    color: var(--preto);
 }
 
 .lista-item, .menu_topico {
     font-size: var(--font-size);
     font-family: var(--font-text);
     background-color: transparent;
+    text-align: left;
 }
 
-.menu_topico, .menu_titulo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0.625rem 0;
-    color: var(--preto);
-}
-
-.menu_titulo {
-    margin-top: 1.875rem;
-    font-size: 1.5625rem;
-    text-transform: capitalize;
-    font-family: var(--font-titulos);
-    margin-bottom: 1.25rem;
-}
-
-
+.menu_tabela {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 0.0625rem solid var(--preto); 
+    margin-top: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .menu_tabela td {
+    border: 0.0625rem solid var(--preto); 
+    padding: 0.5rem; 
+  }
+  
+ .lista_topico {
+    text-align: center;
+ }
 
 
 /* CAPÍTULOS */
