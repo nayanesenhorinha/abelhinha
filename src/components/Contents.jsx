@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
+import '../styles/ebook.css';
 import bookTitle from '../control/title';
 
-const Contents = ({ 
-  goToChapter, 
-  onNext, 
-  goToCover }) => {
+const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
 
   const chapterTitle = "Sumário";
 
@@ -19,49 +17,42 @@ const Contents = ({
 
   return (
     <div className="page menu">
-      <img 
-        className="icone_cabeco" 
-        src="https://via.placeholder.com/25" 
-        alt="Imagem Placeholder"/>
+      <img className="icone_cabeco" src="https://via.placeholder.com/25" alt="Imagem Placeholder"/>
 
-      <div className="menu_sumario">
-        <div className="menu_item">
-          <div className="menu_item_num">
-            0
-          </div>
-          <button 
-            className="menu_item_nom" 
-            onClick={() => goToChapter(0)}>
-            Capa
-          </button>
-        </div>
+      <table className="menu_tabela">
+  <tbody>
+    <tr>
+      <td className="lista_topico">0</td>
+      <td>
+        <button className="lista-item" onClick={() => goToChapter(0)}>
+          Capa
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td className="lista_topico">3</td>
+      <td>
+        <button className="lista-item" onClick={() => goToChapter(3)}>
+          Créditos
+        </button>
+      </td>
+    </tr>
 
-        <div className="menu_item">
-          <div className="menu_item_num">
-            3
-          </div>
-          <button 
-            className="menu_item_nom" 
-            onClick={() => goToChapter(3)}>
-            Créditos
-          </button>
-        </div>
-
-        {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
-          <div className="menu_item" key={chapterNumber}>
-            <div className="menu_item_num">
-              {Number(chapterNumber)}
-            </div>
-            <button 
-            className="menu_item_nom" 
-            onClick={() => goToChapter(Number(chapterNumber) + 4)}>
+    {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
+      <tr key={chapterNumber}>
+        <td className="lista_topico">{chapterData.chap}</td>
+        <td>
+          <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber) + 4)}>
             {chapterData.title}
-            </button>
-          </div>
-        ))}
-      </div>
+          </button>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
       <Navigation 
+        onPrev={onPrev} 
         onNext={onNext} 
         goToCover={goToCover} 
       />

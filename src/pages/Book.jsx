@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable'; 
-import '../control/copy';
+import '../control/main';
 import '../styles/ebook.css';
 import Cover from '../components/Cover';
 import Infos1 from '../components/Infos1';
@@ -21,13 +21,45 @@ const Book = () => {
   };
   
   const pages = [
-    <Cover onNext={() => setCurrentPageAndSave(1)} goToContents={() => setCurrentPageAndSave('menu')} />,
-    <Infos1 onPrev={() => setCurrentPageAndSave(0)} onNext={() => setCurrentPageAndSave(2)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} />,
-    <Infos2 onPrev={() => setCurrentPageAndSave(1)} onNext={() => setCurrentPageAndSave(3)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} />,
-    <Credits onPrev={() => setCurrentPageAndSave(2)} onNext={() => setCurrentPageAndSave(4)} goToContents={() => setCurrentPageAndSave('menu')} goToChapter={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} />,
-    <Contents onPrev={() => setCurrentPageAndSave(3)} goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)} goToCover={() => setCurrentPageAndSave(0)} />,
-    <Chapter1 onPrev={() => setCurrentPageAndSave(4)} onNext={() => setCurrentPageAndSave(6)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} />,
-    <Chapter2 onPrev={() => setCurrentPageAndSave(5)} onNext={() => setCurrentPageAndSave(7)} goToContents={() => setCurrentPageAndSave('menu')} goToCover={() => setCurrentPageAndSave(0)} />,
+    <Cover 
+      onNext={() => setCurrentPageAndSave(1)} 
+      goToContents={() => setCurrentPageAndSave('menu')} />,
+
+    <Infos1 
+      onPrev={() => setCurrentPageAndSave(0)} 
+      onNext={() => setCurrentPageAndSave(2)} 
+      goToContents={() => setCurrentPageAndSave('menu')} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
+
+    <Infos2 
+      onPrev={() => setCurrentPageAndSave(1)} 
+      onNext={() => setCurrentPageAndSave(3)} 
+      goToContents={() => setCurrentPageAndSave('menu')} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
+
+    <Credits 
+      onPrev={() => setCurrentPageAndSave(2)} 
+      onNext={() => setCurrentPageAndSave(4)} 
+      goToContents={() => setCurrentPageAndSave('menu')} 
+      goToChapter={() => setCurrentPageAndSave('menu')} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
+
+    <Contents 
+      onPrev={() => setCurrentPageAndSave(3)} 
+      goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
+
+    <Chapter1 
+      onPrev={() => setCurrentPageAndSave(4)} 
+      onNext={() => setCurrentPageAndSave(6)} 
+      goToContents={() => setCurrentPageAndSave('menu')} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
+      
+    <Chapter2 
+      onPrev={() => setCurrentPageAndSave(5)} 
+      onNext={() => setCurrentPageAndSave(7)} 
+      goToContents={() => setCurrentPageAndSave('menu')} 
+      goToCover={() => setCurrentPageAndSave(0)} />,
     // Continue adicionando os capítulos na ordem desejada
   ];
 

@@ -149,33 +149,40 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-}
-
-.menu_sumario {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-}
-
-.menu_item {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border-bottom: solid 1px #33332F;
-}
-
-.menu_item_num {
-    background-color: #F26DAB;
-    color: var(--branco);
-    border-radius: 100%;
-    font-family: var(--font-text);
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
+
+.menu_topico {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.125rem solid var(--preto); 
+    color: var(--preto);
+}
+
+.lista-item, .menu_topico {
+    font-size: var(--font-size);
+    font-family: var(--font-text);
+    background-color: transparent;
+    text-align: left;
+}
+
+.menu_tabela {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 0.0625rem solid var(--preto); 
+    margin-top: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .menu_tabela td {
+    border: 0.0625rem solid var(--preto); 
+    padding: 0.5rem; 
+  }
+  
+ .lista_topico {
+    text-align: center;
+ }
 
 /* CAPÍTULOS */
 
