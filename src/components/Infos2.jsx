@@ -1,5 +1,8 @@
 import React from 'react';
 import Navigation from './Navigation';
+import chapters from '../control/chapters';
+
+const autor = chapters[0].autor; 
 
 const Infos2 = ({ 
   onNext, 
@@ -24,7 +27,7 @@ const Infos2 = ({
         alt="Imagem Placeholder"/>
         
       <p className="autor_nome">
-        Lewis Carroll
+        {autor}
       </p>
       
       <Navigation 

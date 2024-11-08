@@ -38,16 +38,16 @@ const Contents = ({ goToChapter, onPrev, onNext, goToCover }) => {
       </td>
     </tr>
 
-    {Object.entries(chapters).map(([chapterNumber, chapterData], index) => (
-      <tr key={chapterNumber}>
-        <td className="lista_topico">{chapterData.chap}</td>
-        <td>
-          <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber) + 4)}>
-            {chapterData.title}
-          </button>
-        </td>
-      </tr>
-    ))}
+    {Object.entries(chapters).slice(1).map(([chapterNumber, chapterData], index) => (
+  <tr key={chapterNumber}>
+    <td className="lista_topico">{chapterData.chap}</td>
+    <td>
+      <button className="lista-item" onClick={() => goToChapter(Number(chapterNumber) + 4)}>
+        {chapterData.title}
+      </button>
+    </td>
+  </tr>
+))}
   </tbody>
 </table>
 

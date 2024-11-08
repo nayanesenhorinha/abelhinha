@@ -186,9 +186,10 @@ body {
 
 /* CAPÍTULOS */
 
+
 .chapter_subtitle {
     font-size: 0.75rem;
-    margin-top: 1.25rem;
+    margin-top: 0.5rem;
 }
 
 .chapter_title {
@@ -217,11 +218,9 @@ body {
     font-family: var(--font-text);
     font-size: var(--font-size);
     line-height: 1.5625rem;
+    width: 100%;
 }
 
-.chapter_ret {
-    margin-bottom: 0.9375rem;
-}
 
 
   /* MENU */

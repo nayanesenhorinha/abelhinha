@@ -1,5 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation';
+import chapters from '../control/chapters';
+
+const { 
+  titulo: titulo, 
+  autor: autor,
+  editora: editora} = chapters[0]; 
 
 const Infos1 = ({ 
   onNext, 
@@ -10,17 +16,17 @@ const Infos1 = ({
     <div className="page info">
 
       <p className="info_nome_autor">
-        Lewis Carroll
+        {autor}
       </p>
       
       <h1 className="info_titulo_livro">
-        As Aventuras de Alice no País das Maravilhas
+        {titulo}
       </h1>
       
       <img 
         className="info_logo_editora" 
         src="https://via.placeholder.com/50" 
-        alt="Imagem Placeholder"/>
+        alt={editora}/>
     
       <Navigation 
         goToCover={goToCover} 
