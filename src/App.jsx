@@ -1,6 +1,5 @@
 import React from 'react';
 import Book from './pages/Book';
-import './styles/ebook.css';
 
 function App() {
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable'; 
 import '../control/copy';
+import '../styles/ebook.css';
 import Cover from '../components/Cover';
 import Infos1 from '../components/Infos1';
 import Infos2 from '../components/Infos2';

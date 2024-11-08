@@ -1,10 +1,8 @@
 import React from 'react';
 import Navigation from './Navigation';
-import '../styles/ebook.css';
 
 const Infos1 = ({ 
   onNext, 
-  onPrev, 
   goToContents, 
   goToCover }) => {
 
@@ -19,10 +17,12 @@ const Infos1 = ({
         As Aventuras de Alice no País das Maravilhas
       </h1>
       
-      <img className="info_logo_editora" src="https://via.placeholder.com/50" alt="Imagem Placeholder"/>
-      
+      <img 
+        className="info_logo_editora" 
+        src="https://via.placeholder.com/50" 
+        alt="Imagem Placeholder"/>
+    
       <Navigation 
-        onPrev={onPrev} 
         goToCover={goToCover} 
         onNext={onNext} 
         goToContents={goToContents} />

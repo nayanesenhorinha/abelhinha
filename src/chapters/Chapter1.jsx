@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import bookTitle from '../control/title';
 import chapters from '../control/chapters';
-import '../styles/ebook.css';
 
-const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
+const Chapter1 = ({
+  onNext, 
+  goToContents, 
+  goToCover }) => {
   const chapterNumber = 1;
 
   const chapterTitle = chapters[chapterNumber].title;
@@ -54,7 +56,11 @@ const Chapter1 = ({ onPrev, onNext, goToContents, goToCover }) => {
           <img className="chapter_img" src="https://via.placeholder.com/200" alt="Imagem Placeholder"/>
 
         </div>
-        <Navigation goToCover={goToCover} onPrev={onPrev} onNext={onNext} goToContents={goToContents} />
+        
+        <Navigation 
+          goToCover={goToCover}  
+          onNext={onNext} 
+          goToContents={goToContents} />
       </div>
     </>
   );

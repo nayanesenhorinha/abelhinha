@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Navigation from './Navigation';
-import '../styles/ebook.css';
 import bookTitle from '../control/title';
 
 const Credits = ({ 
