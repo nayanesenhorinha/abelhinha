@@ -1,13 +1,12 @@
-/* VARIÁVEIS E RESETS */
+/* VARIÁVEIS E RESETS 
+"Alegreya", serif;
+*/
 
 :root {
-    --vermelho: #EC1C24;
-    --rosa: #F26DAB;
-    --azul: #3DD1F2;
-    --preto: #33332F;
-    --branco: #f6f6f6;
+    --preto: #CE2139;
+    --branco: #fefefe;
     --font-text: "Source Sans 3";
-    --font-titulos: "Alegreya", serif;
+    --font-titulos: "Source Sans 3";
     --font-size: 0.9375rem;
 }
 

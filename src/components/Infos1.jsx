@@ -14,11 +14,10 @@ const Infos1 = ({
 
   return (
     <div className="page info">
-
       <p className="info_nome_autor">
         {autor}
       </p>
-      
+
       <h1 className="info_titulo_livro">
         {titulo}
       </h1>
@@ -32,7 +31,6 @@ const Infos1 = ({
         goToCover={goToCover} 
         onNext={onNext} 
         goToContents={goToContents} />
-        
     </div>
   );
 };

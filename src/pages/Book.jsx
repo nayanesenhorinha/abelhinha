@@ -4,8 +4,6 @@ import '../control/main';
 import '../styles/ebook.css';
 import Cover from '../components/Cover';
 import Infos1 from '../components/Infos1';
-import Infos2 from '../components/Infos2';
-import Credits from '../components/Credits';
 import Contents from '../components/Contents';
 import Chapter1 from '../chapters/Chapter1';
 import Chapter2 from '../chapters/Chapter2';
@@ -31,19 +29,6 @@ const Book = () => {
       goToContents={() => setCurrentPageAndSave('menu')} 
       goToCover={() => setCurrentPageAndSave(0)} />,
 
-    <Infos2 
-      onPrev={() => setCurrentPageAndSave(1)} 
-      onNext={() => setCurrentPageAndSave(3)} 
-      goToContents={() => setCurrentPageAndSave('menu')} 
-      goToCover={() => setCurrentPageAndSave(0)} />,
-
-    <Credits 
-      onPrev={() => setCurrentPageAndSave(2)} 
-      onNext={() => setCurrentPageAndSave(4)} 
-      goToContents={() => setCurrentPageAndSave('menu')} 
-      goToChapter={() => setCurrentPageAndSave('menu')} 
-      goToCover={() => setCurrentPageAndSave(0)} />,
-
     <Contents 
       onPrev={() => setCurrentPageAndSave(3)} 
       goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)} 
@@ -63,12 +48,12 @@ const Book = () => {
     // Continue adicionando os capítulos na ordem desejada
   ];
 
-  useEffect(() => {
-    const savedPage = localStorage.getItem('currentPage');
-    if (savedPage) {
-      setCurrentPage(savedPage === 'menu' ? 'menu' : parseInt(savedPage, 10));
-    }
-  }, []);
+  //useEffect(() => {
+    //const savedPage = localStorage.getItem('currentPage');
+    //if (savedPage) {
+      //setCurrentPage(savedPage === 'menu' ? 'menu' : parseInt(savedPage, 10));
+    //}
+  //}, []);
 
   const handleSwipeLeft = () => {
     if (currentPage !== 'menu' && currentPage < pages.length - 1) {

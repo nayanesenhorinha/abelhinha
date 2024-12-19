@@ -8,10 +8,7 @@ const Chapter1 = ({ onNext, goToContents, goToCover }) => {
   const { 
     title: chapterTitle, 
     chap: chapterRoman, 
-    texts: chapterTexts, 
-    abertura: abertura, 
-    ilustra: ilustra, 
-    descricao: descricaoIlustra } = chapters[chapterNumber]; 
+    texts: chapterTexts } = chapters[chapterNumber]; 
   const titulo = chapters[0].titulo;
 
   useEffect(() => {
@@ -28,8 +25,8 @@ const Chapter1 = ({ onNext, goToContents, goToCover }) => {
       
       <img 
         className="chapter_img_abertura" 
-        src={abertura} 
-        alt={`Capítulo ${chapterNumber}: ${chapterTitle}`}/>
+        src="https://via.placeholder.com/25" 
+        alt=""/>
       
       <div className="chapter_content">
         {chapterTexts.map((paragraph, index) => (
@@ -43,7 +40,7 @@ const Chapter1 = ({ onNext, goToContents, goToCover }) => {
           </p>
         ))}
         
-        <img className="chapter_img" src={ilustra} alt={descricaoIlustra}/>
+        <img className="chapter_img" src="" alt=""/>
       </div>
       
       <Navigation 

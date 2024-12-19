@@ -9,9 +9,6 @@ const chapters = {
   1: { 
     title: "Na toca do Coelho", 
     chap: "I", 
-    abertura: "https://via.placeholder.com/25",
-    ilustra: "https://via.placeholder.com/200",
-    descricao: "Descrição da ilustração do capítulo",
     texts: [
         {
           text: "Alice estava cansada de ficar sentada sem ter nada para fazer. Uma ou duas vezes, ela espiou o livro que sua irmã lia a seu lado, mas ele não tinha figuras nem diálogos. “E de que serve um livro,” pensou Alice, “sem figuras ou diálogos?”",
@@ -101,9 +98,6 @@ const chapters = {
   2: { 
     title: "A lagoa de lágrimas", 
     chap: "II",
-    abertura: "https://via.placeholder.com/25",
-    ilustra: "https://via.placeholder.com/200",
-    descricao: "Descrição da ilustração do capítulo",
     texts: [
         {
           text: "“Cada vez mais curioso!” gritou Alice (ela estava tão surpresa, que por um momento se esqueceu de como falar bom inglês); “Agora estou me abrindo como o maior telescópio que já existiu! Adeus, pés!” (pois quando ela olhou para os pés, pareciam estar quase fora de vista, ficando tão distantes). “Ah, meus pobres pezinhos, quem irá calçar seus sapatos e meias para vocês agora, queridos? Tenho certeza de que não serei eu! Estarei muito longe para me preocupar com isso: vocês terão que se virar da melhor maneira que puderem. Mas devo ser gentil com eles,” pensou Alice, “ou talvez eles não andem na direção que eu quero! Deixe-me ver: vou dar a eles um novo par de botas todo Natal.”",
